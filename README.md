@@ -1,0 +1,1 @@
+/*It is a simple search platform made using html,css and javascript  with a nice background on searching it redirects to google search it also has youtube ,gmail, whatsapp web as features if you use it i hope you will enjoy it*/
