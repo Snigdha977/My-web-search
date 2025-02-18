@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Search</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("https://manalitourism.co.in/images/places-to-visit/headers/one-day-manali-top-places-to-visit-header-manali-tourism.jpg.jpg") no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .top-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .top-links img {
+            width: 45px;
+            height: 45px;
+        }
+        .welcome, .subtitle {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adding shadow to make text more visible */
+        }
+        .welcome {
+            font-size: 36px;
+        }
+        .subtitle {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .navbar {
+            width: 600px;
+            height: 50px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+            justify-content: center;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .search-box {
+            width: 500px;
+            height: 45px;
+            border-radius: 25px;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            outline: none;
+            background: white;
+            color: black;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-links">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"> YouTube
+        </a>
+        <a href="https://mail.google.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"> Gmail
+        </a>
+        <a href="https://web.whatsapp.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
+        </a>
+    </div>
+    <div class="welcome">“Welcome to My Web Search”</div>
+    <div class="subtitle">“One stop search for all your doubts”</div>
+    <div class="search-container">
+        <input type="text" class="search-box" id="search" placeholder="Search the web..." onkeydown="search(event)">
+    </div>
+    
+    <script>
+        function search(event) {
+            if (event.key === 'Enter') {
+                let query = document.getElementById('search').value;
+                if (query) {
+                    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
