@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://manalitourism.co.in/images/places-to-visit/headers/one-day-manali-top-places-to-visit-header-manali-tourism.jpg.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.top-links {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.top-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.top-links img {
+    width: 45px;
+    height: 45px;
+}
+.welcome, .subtitle {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.welcome {
+    font-size: 36px;
+}
+.subtitle {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search-box {
+    width: 500px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    outline: none;
+    background: white;
+    color: black;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+.search-button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #3392ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background: #00aeff;
+    transition: 0.3s;
+}
